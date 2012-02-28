@@ -5,6 +5,8 @@ The non-password-prtotected screen saver version of this is one line of code. Wh
 
 This was developed in Xcode 4 and has only been tested on Lion. It should run on 10.6, too, as OS X screen savers are not ARC-ified.
 
+Not into compiling source on your own? Download the compiled binary in a DMG here: https://github.com/downloads/marczak/johnnynash/johnnynash-1.0.dmg
+
 #To Do
 - Configure sheet to allow frequency of running.
 - Configure sheet to allow capture of a portion of the screen.
