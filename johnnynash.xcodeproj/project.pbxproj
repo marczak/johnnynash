@@ -1,0 +1,337 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5AEE9AE614F54F5A0015CD16 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AEE9AE514F54F5A0015CD16 /* Cocoa.framework */; };
+		5AEE9AE814F54F5A0015CD16 /* ScreenSaver.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AEE9AE714F54F5A0015CD16 /* ScreenSaver.framework */; };
+		5AEE9AF214F54F5A0015CD16 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5AEE9AF014F54F5A0015CD16 /* InfoPlist.strings */; };
+		5AEE9AF614F54F5A0015CD16 /* johnnynashView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AEE9AF514F54F5A0015CD16 /* johnnynashView.m */; };
+		5AEE9AFD14F54FE20015CD16 /* johnnynash.saver in CopyFiles */ = {isa = PBXBuildFile; fileRef = 5AEE9AE214F54F5A0015CD16 /* johnnynash.saver */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		5AEE9AFC14F54FDB0015CD16 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "~/Library/Screen Savers";
+			dstSubfolderSpec = 0;
+			files = (
+				5AEE9AFD14F54FE20015CD16 /* johnnynash.saver in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		5ADD360714FD0DC30007DEB9 /* README */ = {isa = PBXFileReference; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
+		5AEE9AE214F54F5A0015CD16 /* johnnynash.saver */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = johnnynash.saver; sourceTree = BUILT_PRODUCTS_DIR; };
+		5AEE9AE514F54F5A0015CD16 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		5AEE9AE714F54F5A0015CD16 /* ScreenSaver.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ScreenSaver.framework; path = System/Library/Frameworks/ScreenSaver.framework; sourceTree = SDKROOT; };
+		5AEE9AEA14F54F5A0015CD16 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		5AEE9AEB14F54F5A0015CD16 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		5AEE9AEC14F54F5A0015CD16 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		5AEE9AEF14F54F5A0015CD16 /* johnnynash-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "johnnynash-Info.plist"; sourceTree = "<group>"; };
+		5AEE9AF114F54F5A0015CD16 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		5AEE9AF314F54F5A0015CD16 /* johnnynash-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "johnnynash-Prefix.pch"; sourceTree = "<group>"; };
+		5AEE9AF414F54F5A0015CD16 /* johnnynashView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = johnnynashView.h; sourceTree = "<group>"; };
+		5AEE9AF514F54F5A0015CD16 /* johnnynashView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = johnnynashView.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5AEE9ADD14F54F5A0015CD16 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5AEE9AE614F54F5A0015CD16 /* Cocoa.framework in Frameworks */,
+				5AEE9AE814F54F5A0015CD16 /* ScreenSaver.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5AEE9AD514F54F5A0015CD16 = {
+			isa = PBXGroup;
+			children = (
+				5AEE9AED14F54F5A0015CD16 /* johnnynash */,
+				5AEE9AE414F54F5A0015CD16 /* Frameworks */,
+				5AEE9AE314F54F5A0015CD16 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5AEE9AE314F54F5A0015CD16 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5AEE9AE214F54F5A0015CD16 /* johnnynash.saver */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5AEE9AE414F54F5A0015CD16 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5AEE9AE514F54F5A0015CD16 /* Cocoa.framework */,
+				5AEE9AE714F54F5A0015CD16 /* ScreenSaver.framework */,
+				5AEE9AE914F54F5A0015CD16 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5AEE9AE914F54F5A0015CD16 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5AEE9AEA14F54F5A0015CD16 /* AppKit.framework */,
+				5AEE9AEB14F54F5A0015CD16 /* CoreData.framework */,
+				5AEE9AEC14F54F5A0015CD16 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		5AEE9AED14F54F5A0015CD16 /* johnnynash */ = {
+			isa = PBXGroup;
+			children = (
+				5AEE9AF414F54F5A0015CD16 /* johnnynashView.h */,
+				5AEE9AF514F54F5A0015CD16 /* johnnynashView.m */,
+				5ADD360714FD0DC30007DEB9 /* README */,
+				5AEE9AEE14F54F5A0015CD16 /* Supporting Files */,
+			);
+			path = johnnynash;
+			sourceTree = "<group>";
+		};
+		5AEE9AEE14F54F5A0015CD16 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5AEE9AEF14F54F5A0015CD16 /* johnnynash-Info.plist */,
+				5AEE9AF014F54F5A0015CD16 /* InfoPlist.strings */,
+				5AEE9AF314F54F5A0015CD16 /* johnnynash-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		5AEE9ADE14F54F5A0015CD16 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		5AEE9AE114F54F5A0015CD16 /* johnnynash */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5AEE9AF914F54F5A0015CD16 /* Build configuration list for PBXNativeTarget "johnnynash" */;
+			buildPhases = (
+				5AEE9ADC14F54F5A0015CD16 /* Sources */,
+				5AEE9ADD14F54F5A0015CD16 /* Frameworks */,
+				5AEE9ADE14F54F5A0015CD16 /* Headers */,
+				5AEE9ADF14F54F5A0015CD16 /* Resources */,
+				5AEE9AE014F54F5A0015CD16 /* Rez */,
+				5AEE9AFC14F54FDB0015CD16 /* CopyFiles */,
+				5A97772C14F5B3C000E671D9 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = johnnynash;
+			productName = johnnynash;
+			productReference = 5AEE9AE214F54F5A0015CD16 /* johnnynash.saver */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5AEE9AD714F54F5A0015CD16 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+				ORGANIZATIONNAME = Radiotope;
+			};
+			buildConfigurationList = 5AEE9ADA14F54F5A0015CD16 /* Build configuration list for PBXProject "johnnynash" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 5AEE9AD514F54F5A0015CD16;
+			productRefGroup = 5AEE9AE314F54F5A0015CD16 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5AEE9AE114F54F5A0015CD16 /* johnnynash */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5AEE9ADF14F54F5A0015CD16 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5AEE9AF214F54F5A0015CD16 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXRezBuildPhase section */
+		5AEE9AE014F54F5A0015CD16 /* Rez */ = {
+			isa = PBXRezBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXRezBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5A97772C14F5B3C000E671D9 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "open ~/Library/Screen\\ Savers";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5AEE9ADC14F54F5A0015CD16 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5AEE9AF614F54F5A0015CD16 /* johnnynashView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		5AEE9AF014F54F5A0015CD16 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5AEE9AF114F54F5A0015CD16 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5AEE9AF714F54F5A0015CD16 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_ENABLE_OBJC_GC = supported;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		5AEE9AF814F54F5A0015CD16 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_ENABLE_OBJC_GC = supported;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		5AEE9AFA14F54F5A0015CD16 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = NO;
+				GCC_ENABLE_OBJC_GC = supported;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "johnnynash/johnnynash-Prefix.pch";
+				INFOPLIST_FILE = "johnnynash/johnnynash-Info.plist";
+				INSTALL_PATH = "$(HOME)/Library/Screen Savers";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = saver;
+			};
+			name = Debug;
+		};
+		5AEE9AFB14F54F5A0015CD16 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = NO;
+				GCC_ENABLE_OBJC_GC = supported;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "johnnynash/johnnynash-Prefix.pch";
+				INFOPLIST_FILE = "johnnynash/johnnynash-Info.plist";
+				INSTALL_PATH = "$(HOME)/Library/Screen Savers";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = saver;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5AEE9ADA14F54F5A0015CD16 /* Build configuration list for PBXProject "johnnynash" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5AEE9AF714F54F5A0015CD16 /* Debug */,
+				5AEE9AF814F54F5A0015CD16 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5AEE9AF914F54F5A0015CD16 /* Build configuration list for PBXNativeTarget "johnnynash" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5AEE9AFA14F54F5A0015CD16 /* Debug */,
+				5AEE9AFB14F54F5A0015CD16 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5AEE9AD714F54F5A0015CD16 /* Project object */;
+}
