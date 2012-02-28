@@ -74,6 +74,7 @@
   CGContextRef context = (CGContextRef)[[NSGraphicsContext currentContext] graphicsPort];
   
   CGContextDrawImage(context, rect, img);
+  CGImageRelease(img);
 }
 
 
