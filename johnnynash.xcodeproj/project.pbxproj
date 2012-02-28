@@ -11,21 +11,7 @@
 		5AEE9AE814F54F5A0015CD16 /* ScreenSaver.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AEE9AE714F54F5A0015CD16 /* ScreenSaver.framework */; };
 		5AEE9AF214F54F5A0015CD16 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5AEE9AF014F54F5A0015CD16 /* InfoPlist.strings */; };
 		5AEE9AF614F54F5A0015CD16 /* johnnynashView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AEE9AF514F54F5A0015CD16 /* johnnynashView.m */; };
-		5AEE9AFD14F54FE20015CD16 /* johnnynash.saver in CopyFiles */ = {isa = PBXBuildFile; fileRef = 5AEE9AE214F54F5A0015CD16 /* johnnynash.saver */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		5AEE9AFC14F54FDB0015CD16 /* CopyFiles */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "~/Library/Screen Savers";
-			dstSubfolderSpec = 0;
-			files = (
-				5AEE9AFD14F54FE20015CD16 /* johnnynash.saver in CopyFiles */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		5AEE9AE214F54F5A0015CD16 /* johnnynash.saver */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = johnnynash.saver; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -133,7 +119,6 @@
 				5AEE9ADE14F54F5A0015CD16 /* Headers */,
 				5AEE9ADF14F54F5A0015CD16 /* Resources */,
 				5AEE9AE014F54F5A0015CD16 /* Rez */,
-				5AEE9AFC14F54FDB0015CD16 /* CopyFiles */,
 				5A97772C14F5B3C000E671D9 /* ShellScript */,
 			);
 			buildRules = (
