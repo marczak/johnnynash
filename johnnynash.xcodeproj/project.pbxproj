@@ -28,7 +28,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		5ADD360714FD0DC30007DEB9 /* README */ = {isa = PBXFileReference; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
 		5AEE9AE214F54F5A0015CD16 /* johnnynash.saver */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = johnnynash.saver; sourceTree = BUILT_PRODUCTS_DIR; };
 		5AEE9AE514F54F5A0015CD16 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		5AEE9AE714F54F5A0015CD16 /* ScreenSaver.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ScreenSaver.framework; path = System/Library/Frameworks/ScreenSaver.framework; sourceTree = SDKROOT; };
@@ -97,7 +96,6 @@
 			children = (
 				5AEE9AF414F54F5A0015CD16 /* johnnynashView.h */,
 				5AEE9AF514F54F5A0015CD16 /* johnnynashView.m */,
-				5ADD360714FD0DC30007DEB9 /* README */,
 				5AEE9AEE14F54F5A0015CD16 /* Supporting Files */,
 			);
 			path = johnnynash;
