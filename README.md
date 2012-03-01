@@ -5,15 +5,21 @@ The non-password-prtotected screen saver version of this is one line of code. Wh
 
 This was developed in Xcode 4 and has only been tested on Lion. It should run on 10.6, too, as OS X screen savers are not ARC-ified.
 
-Not into compiling source on your own? Download the compiled binary in a DMG here: https://github.com/downloads/marczak/johnnynash/johnnynash-1.0.dmg
+Not into compiling source on your own? Download the compiled binary in a DMG here: https://github.com/downloads/marczak/johnnynash/johnnynash-1.3.dmg
 
 
 Licensed under the Apache 2.0 license. Please see the LICENSE file for details.
 
-#To Do
+#Done
+- Create a more accurate/use preview.
 - Configure sheet to allow frequency of running.
+
+#To Do
+- Use a number formatter to half-second values in config window.
 - Configure sheet to allow capture of a portion of the screen.
 - Allow effects to be applied to screen capture.
+- Option to camera-capture user attempting unlock?
+- Multi-monitor support? (This is untested.)
 
 #Bugs
-- None known
+- Configure sheet crashes on second load.

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5A32CB6714FD9A91004CDED0 /* ConfigureSheet.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5A32CB6614FD9A91004CDED0 /* ConfigureSheet.xib */; };
 		5AEE9AE614F54F5A0015CD16 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AEE9AE514F54F5A0015CD16 /* Cocoa.framework */; };
 		5AEE9AE814F54F5A0015CD16 /* ScreenSaver.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AEE9AE714F54F5A0015CD16 /* ScreenSaver.framework */; };
 		5AEE9AF214F54F5A0015CD16 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5AEE9AF014F54F5A0015CD16 /* InfoPlist.strings */; };
@@ -14,6 +15,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5A32CB6614FD9A91004CDED0 /* ConfigureSheet.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ConfigureSheet.xib; sourceTree = "<group>"; };
 		5AEE9AE214F54F5A0015CD16 /* johnnynash.saver */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = johnnynash.saver; sourceTree = BUILT_PRODUCTS_DIR; };
 		5AEE9AE514F54F5A0015CD16 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		5AEE9AE714F54F5A0015CD16 /* ScreenSaver.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ScreenSaver.framework; path = System/Library/Frameworks/ScreenSaver.framework; sourceTree = SDKROOT; };
@@ -82,6 +84,7 @@
 			children = (
 				5AEE9AF414F54F5A0015CD16 /* johnnynashView.h */,
 				5AEE9AF514F54F5A0015CD16 /* johnnynashView.m */,
+				5A32CB6614FD9A91004CDED0 /* ConfigureSheet.xib */,
 				5AEE9AEE14F54F5A0015CD16 /* Supporting Files */,
 			);
 			path = johnnynash;
@@ -162,6 +165,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5AEE9AF214F54F5A0015CD16 /* InfoPlist.strings in Resources */,
+				5A32CB6714FD9A91004CDED0 /* ConfigureSheet.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
