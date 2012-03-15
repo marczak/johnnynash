@@ -141,7 +141,7 @@
 	NSUserDefaults *def = [ScreenSaverDefaults defaultsForModuleWithName:
                          [[NSBundle bundleForClass:[self class]] bundleIdentifier]];
 	NSUserDefaultsController *controller = [[NSUserDefaultsController alloc] initWithDefaults:def initialValues:nil];
-	[configController setContent: controller];
+	[configController setContent:controller];
 	[controller release];
 }
 
@@ -156,7 +156,6 @@
   }
 	
 	return configureSheet;
-  return nil;
 }
 
 
