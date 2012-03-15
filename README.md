@@ -13,13 +13,12 @@ Licensed under the Apache 2.0 license. Please see the LICENSE file for details.
 #Done
 - Create a more accurate/use preview.
 - Configure sheet to allow frequency of running.
+- Bug fixed: - Configure sheet crashes on second load.
 
 #To Do
 - Use a number formatter to half-second values in config window.
-- Configure sheet to allow capture of a portion of the screen.
+- Option to allow capture of a portion of the screen.
 - Allow effects to be applied to screen capture.
 - Option to camera-capture user attempting unlock?
 - Multi-monitor support? (This is untested.)
-
-#Bugs
-- Configure sheet crashes on second load.
+- Test smoother operation by adding second, dummy window to perform the capture.
