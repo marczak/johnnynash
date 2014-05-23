@@ -27,10 +27,6 @@
 
 - (id)initWithFrame:(NSRect)frame isPreview:(BOOL)isPreview
 {
-  NSLog(@"initWithFrame: frame.origin.x = %f, width = %f",
-        frame.origin.x,
-        frame.size.width);
-
   self = [super initWithFrame:frame isPreview:isPreview];
 
   if (self) {
@@ -61,15 +57,9 @@
 #pragma mark - Animation Methods
 - (void)drawRect:(NSRect)rect
 {
-  if (debug) {
-    NSLog(@"In drawRect, on screen %@, width %f",
-          [self.window screen],
-          [[self.window screen] frame].size.width);
-  }
   NSInteger oldLevel;
   CGRect cgrect;
   NSScreen *curScreen = [self.window screen];
-//  NSArray *screenList = [NSScreen screens];
 
   if ([self isPreview]) {
     // Grab the entire screen if in preview mode
@@ -81,9 +71,8 @@
     cgrect.size.height = myNSWindowSize.height;
   } else {
     // Grab the rectangle of the screen directly under this window.
-//    NSSize myNSWindowSize = [[self.window contentView] frame].size;
     cgrect.origin.x    = [curScreen frame].origin.x;
-    cgrect.origin.y    = [curScreen frame].origin.y;
+    cgrect.origin.y    = 0;
     cgrect.size.width  = [curScreen frame].size.width;
     cgrect.size.height = [curScreen frame].size.height;
   }
@@ -96,9 +85,10 @@
     }
     
     if (debug) {
-      NSLog(@"snapping window number %ld, origin.x = %f, width = %f",
+      NSLog(@"snapping window number %ld, origin.x = %f, origin.y = %f, width = %f",
             (long)[self.window windowNumber],
             cgrect.origin.x,
+            cgrect.origin.y,
             cgrect.size.width);
     }
     // Grab a screen shot of the windows below this one
@@ -115,7 +105,6 @@
 
     // Render the grabbed CGImage into the view.
     CGContextRef context = (CGContextRef)[[NSGraphicsContext currentContext] graphicsPort];
-
     CGContextDrawImage(context, rect, img);
     CGImageRelease(img);
     previewShown = YES;
