@@ -27,6 +27,10 @@
 
 - (id)initWithFrame:(NSRect)frame isPreview:(BOOL)isPreview
 {
+  NSLog(@"initWithFrame: frame.origin.x = %f, width = %f",
+        frame.origin.x,
+        frame.size.width);
+
   self = [super initWithFrame:frame isPreview:isPreview];
 
   if (self) {
@@ -58,10 +62,14 @@
 - (void)drawRect:(NSRect)rect
 {
   if (debug) {
-    NSLog(@"In drawRect");
+    NSLog(@"In drawRect, on screen %@, width %f",
+          [self.window screen],
+          [[self.window screen] frame].size.width);
   }
-  int oldLevel;
+  NSInteger oldLevel;
   CGRect cgrect;
+  NSScreen *curScreen = [self.window screen];
+//  NSArray *screenList = [NSScreen screens];
 
   if ([self isPreview]) {
     // Grab the entire screen if in preview mode
@@ -73,11 +81,11 @@
     cgrect.size.height = myNSWindowSize.height;
   } else {
     // Grab the rectangle of the screen directly under this window.
-    NSSize myNSWindowSize = [[self.window contentView] frame ].size;
-    cgrect.origin.x    = [self.window frame].origin.x;
-    cgrect.origin.y    = [self.window frame].origin.y;
-    cgrect.size.width  = myNSWindowSize.width;
-    cgrect.size.height = myNSWindowSize.height;
+//    NSSize myNSWindowSize = [[self.window contentView] frame].size;
+    cgrect.origin.x    = [curScreen frame].origin.x;
+    cgrect.origin.y    = [curScreen frame].origin.y;
+    cgrect.size.width  = [curScreen frame].size.width;
+    cgrect.size.height = [curScreen frame].size.height;
   }
 
   if ( ([self isPreview] && !previewShown) || ![self isPreview] ){
@@ -86,13 +94,19 @@
       oldLevel = [self.window level];
       [[self window] setLevel:CGWindowLevelForKey(kCGPopUpMenuWindowLevelKey)];
     }
-
+    
+    if (debug) {
+      NSLog(@"snapping window number %ld, origin.x = %f, width = %f",
+            (long)[self.window windowNumber],
+            cgrect.origin.x,
+            cgrect.size.width);
+    }
     // Grab a screen shot of the windows below this one
     CGImageRef img = 
-    CGWindowListCreateImage (cgrect,
-                             kCGWindowListOptionOnScreenBelowWindow,
-                             [self.window windowNumber],
-                             kCGWindowImageDefault);
+    CGWindowListCreateImage(cgrect,
+                            kCGWindowListOptionOnScreenBelowWindow,
+                            (CGWindowID)[self.window windowNumber],
+                            kCGWindowImageDefault);
 
     if (![self isPreview]) {
       // put us back above the 'barrier window'.
@@ -142,7 +156,6 @@
                          [[NSBundle bundleForClass:[self class]] bundleIdentifier]];
 	NSUserDefaultsController *controller = [[NSUserDefaultsController alloc] initWithDefaults:def initialValues:nil];
 	[configController setContent:controller];
-	[controller release];
 }
 
 

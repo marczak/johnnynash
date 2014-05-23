@@ -272,8 +272,8 @@
 		5AEE9AFA14F54F5A0015CD16 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CLANG_ENABLE_OBJC_ARC = NO;
-				GCC_ENABLE_OBJC_GC = supported;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				GCC_ENABLE_OBJC_GC = unsupported;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "johnnynash/johnnynash-Prefix.pch";
 				INFOPLIST_FILE = "johnnynash/johnnynash-Info.plist";
@@ -286,8 +286,8 @@
 		5AEE9AFB14F54F5A0015CD16 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CLANG_ENABLE_OBJC_ARC = NO;
-				GCC_ENABLE_OBJC_GC = supported;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				GCC_ENABLE_OBJC_GC = unsupported;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "johnnynash/johnnynash-Prefix.pch";
 				INFOPLIST_FILE = "johnnynash/johnnynash-Info.plist";
